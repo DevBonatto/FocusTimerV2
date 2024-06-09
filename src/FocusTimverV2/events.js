@@ -10,14 +10,17 @@ export function registerControls() {
     if(typeof actions[action] != 'function') {
       return
     }
+    event.target.classList.remove('animate__animated', 'animate__pulse')
+    event.target.offsetWidth
+    event.target.classList.add('animate__animated', 'animate__pulse')
     actions[action]()
   } )
 }
 
 export function focusMusicButtons() {
   musicsButtons.addEventListener('click', (e) =>{
-    sounds.clickToggleMusic.play()
     if(e.target.tagName === 'BUTTON') {
+      sounds.clickToggleMusic.play()
       if(e.target.classList.contains('blue')) {
         e.target.classList.remove('blue')
       }else {
