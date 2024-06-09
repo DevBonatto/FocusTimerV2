@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --hue:194;
+  --bg-color: #fff;
+  --text-color: #323238;
+  --selected-bg: hsla(var(--hue), 97%, 31%, 1);
+}
+
+/* Controls */
+.running .ph-play-circle,
+html:not(.running) .ph-stop-circle {
+  display: none;
+}
+
+body section.alert{
+  display: none;
+}
+
+body section.alert.popUp{
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  animation-duration: 1.5s;
+}
+
+body section.alert.popUp p {
+  color: red;
+  font-size: 2.5rem;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Roboto', sans-serif;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+button {
+  font-size: 6.4rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+#app {
+  display: flex;
+  align-items: center;
+  gap: 19.2rem;
+}
+
+#app section.first {
+  display: grid;
+  place-items: center;
+  margin-left: 4rem;
+}
+
+#app section.first .counter {
+  display: flex;
+}
+
+#app section.first span {
+  color: var(--text-color);
+  font-size: 12.4rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+#app section.first #controls {
+  display: flex;
+  margin-top: 1.6rem;
+  gap: 4rem;
+}
+
+#app section#musicButton{
+ display: flex;
+ margin-right: 4rem;
+}
+
+#app section#musicButton {
+  display: grid;
+  grid-template-areas: 
+      "top-left top-right"
+      "bottom-left bottom-right";
+  gap: 4rem;
+}
+
+#app section#musicButton button:nth-child(1) {
+  grid-area: top-left;
+}
+
+#app section#musicButton button:nth-child(2) {
+  grid-area: top-right;
+}
+
+#app section#musicButton button:nth-child(3) {
+  grid-area: bottom-left;
+}
+
+#app section#musicButton button:nth-child(4) {
+  grid-area: bottom-right;
+}
+
+#app section.first #controls button {
+  color: var(--text-color)
+}
+
+#app section#musicButton button {
+  width: 14rem;
+  height: 12rem;
+  background: hsla(240, 9%, 89%, 1);
+  border-radius: 2rem;
+  color: var(--text-color);
+}
+
+#app section#musicButton button.blue {
+  background: var(--selected-bg);
+  color: var(--bg-color);
+}
+
+/* Mobile */
+@media (max-width: 800px) {
+  #app {
+    flex-direction: column;
+    gap: 8rem;
+  }
+
+  #app section.first {
+    margin: 0 4rem;
+  }
+  #app section#musicButton {
+    margin: 0 4rem;
+  }
+}
