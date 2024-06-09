@@ -21,7 +21,6 @@ export function plus5Minutes() {
 
   let minutes = Number(elements.minutes.textContent)
 
-
   if(minutes % 5 !== 0) {
     minutes = Math.ceil(minutes / 5) * 5;
   } else{
