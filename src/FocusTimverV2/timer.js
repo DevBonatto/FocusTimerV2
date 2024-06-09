@@ -1,6 +1,7 @@
 import state from './state.js'
 import * as elements from './elements.js'
 import { reset } from './actions.js'
+import { alarmSound } from './sounds.js'
 
 export function countDown() {
   clearTimeout(state.countDownId)
@@ -20,6 +21,7 @@ export function countDown() {
   }
 
   if(minutes < 0){
+    alarmSound.play()
     reset()
     return
   }

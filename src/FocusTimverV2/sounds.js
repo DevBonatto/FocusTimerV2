@@ -14,7 +14,10 @@ export const clickToggleSound = new Audio('./assets/clickSounds/click-toggle.wav
 
 export const clickToggleMusic = new Audio('./assets/clickSounds/click-toggle-music.wav')
 
-export const alertSound = new Audio('./assets/alert-sound.wav')
+export const alarmSound = new Audio('./assets/sounds/alarm-sound.wav')
+
+export const alertSound = new Audio('./assets/sounds/alert-sound.wav')
+
 
 coffee.loop = true
 fireplace.loop = true
