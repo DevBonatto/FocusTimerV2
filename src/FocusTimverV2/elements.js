@@ -6,4 +6,4 @@ export const minutes = document.getElementById('minutes')
 
 export const seconds = document.getElementById('seconds')
 
-export const alert = document.getElementsByClassName("alert")[0];
+export const alert = document.querySelector('.alert')
