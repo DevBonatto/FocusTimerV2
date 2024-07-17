@@ -65,8 +65,8 @@ export function minus5Minutes() {
     minutes = 0
   }
 
-  sounds.clickMinusSound.play()
   timer.updateDisplay(minutes)
+  sounds.clickMinusSound.play()
 }
 
 export function reset() {
