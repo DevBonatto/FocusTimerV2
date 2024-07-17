@@ -54,10 +54,11 @@ export function minus5Minutes() {
 
   let minutes = Number(elements.minutes.textContent)
 
-  minutes -= 5
 
   if(minutes % 5 !== 0) {
     minutes = Math.ceil(minutes / 5) * 5
+  } else {
+    minutes -= 5
   }
 
   if(minutes < 0) {
