@@ -11,7 +11,7 @@ export function registerControls() {
       return
     }
     event.target.classList.remove('animate__animated', 'animate__pulse')
-    event.target.offsetWidth
+    void event.target.offsetWidth
     event.target.classList.add('animate__animated', 'animate__pulse')
     actions[action]()
   } )
