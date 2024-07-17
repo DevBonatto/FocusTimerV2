@@ -27,7 +27,7 @@ export function plus5Minutes() {
 
   if(minutes % 5 !== 0) {
     minutes = Math.ceil(minutes / 5) * 5
-  } else{
+  }else {
     minutes += 5
   }
 
