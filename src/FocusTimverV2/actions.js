@@ -12,12 +12,16 @@ export function toggleRunning() {
 }
 
 export function plus5Minutes() {
+  const alertSection = elements.alert
+
   if(state.isRunning) {
-    elements.alert.classList.add('popUp')
+    alertSection.classList.remove('popUp')
+    void alertSection.offsetWidth
+    alertSection.classList.add('popUp')
     sounds.alertSound.play()
+   
     return
   }
-  elements.alert.classList.remove('popUp')
 
   let minutes = Number(elements.minutes.textContent)
 
@@ -36,10 +40,14 @@ export function plus5Minutes() {
 }
 
 export function minus5Minutes() {
+  const alertSection = elements.alert
 
   if(state.isRunning) {
-    elements.alert.classList.add('popUp')
+    alertSection.classList.remove('popUp')
+    void alertSection.offsetWidth
+    alertSection.classList.add('popUp')
     sounds.alertSound.play()
+   
     return
   }
   elements.alert.classList.remove('popUp')
