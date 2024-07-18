@@ -3,7 +3,8 @@
 <p align="center">
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-resultado">Resultado</a>&nbsp;&nbsp;&nbsp;
+   <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-layout">Documentação Lógica</a>&nbsp;&nbsp;&nbsp;
 </p>
 
 <br>
@@ -41,3 +42,6 @@ Neste desafio foi criado um Focus Timer(V2) parecido com o Pomodoro. Temas aplic
 
 ## 🔖 Layout
 Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figma.com/file/mWWxLYCbpmM3rMqWB7lKV8/Stage-05-Focus-Timer-2.0-Copy?fuid=1369823793362288511)
+
+## 📄 Documentação Lógica
+[CLIQUE AQUI](https://drive.google.com/file/d/1bKsNK73T1_YZM1jZ4nDgEmFw2K6pkhYS/view?usp=sharing) para ver a documentação lógica do projeto.
