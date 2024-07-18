@@ -56,8 +56,8 @@ export function minus5Minutes() {
 
 
   if(minutes % 5 !== 0) {
-    minutes = Math.ceil(minutes / 5) * 5
-  } else {
+    minutes = Math.floor(minutes / 5) * 5
+  }else {
     minutes -= 5
   }
 
