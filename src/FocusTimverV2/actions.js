@@ -20,7 +20,7 @@ export function plus5Minutes() {
     alertSection.classList.add('popUp')
     sounds.alertSound.play()
    
-    return
+    return;
   }
 
   let minutes = Number(elements.minutes.textContent)
